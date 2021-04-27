@@ -1,0 +1,23 @@
+.title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.title::before,
+.title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 25%;
+}
+.title::before {
+  background-color: #4a5ed1;
+  bottom: 0;
+  left: 0;
+}
+.title::after {
+  background-color: #202441;
+  bottom: 0;
+  left: 26%;
+}

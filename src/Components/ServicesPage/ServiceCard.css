@@ -1,0 +1,15 @@
+.service-card {
+  background: none;
+  border: 1px solid #2e344e;
+  border-top: 5px solid #2e344e;
+  color: #ffffff94;
+  transition: all 0.3s linear;
+}
+.service-card:hover {
+  cursor: pointer;
+  border-top: 5px solid #037fff;
+}
+.service-card-img {
+  width: 115px;
+  height: 115px;
+}
