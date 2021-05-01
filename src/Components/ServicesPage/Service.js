@@ -1,11 +1,12 @@
 import React from 'react';
 import Title from '../ShearedComponent/Title/Title';
 import ServiceCard from './ServiceCard';
-import webdesign from '../../image/design.svg'
+import webdesign from '../../image/webdesign.png'
+import webdeveloping from '../../image/webdevelopmig.png'
 
 const services = [
     { name: "Web Design", image: webdesign, info: "Some quick example text to build on the card title and make up the bulk of the card's content" },
-    { name: "Web Developing", image: webdesign, info: "Some quick example text to build on the card title and make up the bulk of the card's content" },
+    { name: "Web Developing", image: webdeveloping, info: "Some quick example text to build on the card title and make up the bulk of the card's content" },
     { name: "Web Design", image: webdesign, info: "Some quick example text to build on the card title and make up the bulk of the card's content" },
     { name: "Web Developing", image: webdesign, info: "Some quick example text to build on the card title and make up the bulk of the card's content" },
 ]

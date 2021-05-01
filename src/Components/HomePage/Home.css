@@ -1,3 +1,11 @@
 .name {
   font-size: 3.5rem;
 }
+.cv-icon{
+  width: 40px;
+  vertical-align: baseline;
+  background-color: #a3a3bc;
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 5px;
+}

@@ -1,4 +1,4 @@
-.link-area a {
+.link-area a, .link-area-code a {
   text-decoration: none;
   color: white;
   font-weight: 600;
@@ -18,11 +18,25 @@
   visibility: hidden;
   position: absolute;
   bottom: -25%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in;
+}
+.link-area-code {
+  visibility: hidden;
+  position: absolute;
+  bottom: -25%;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.5s ease-in;
 }
 .portfolio-image:hover .link-area {
   visibility: visible;
-  bottom:50%
+  bottom: 50%;
+}
+.portfolio-image:hover .link-area-code {
+  visibility: visible;
+  bottom: 40%;
 }

@@ -3,13 +3,25 @@
   border: 1px solid #2e344e;
   border-top: 5px solid #2e344e;
   color: #ffffff94;
-  transition: all 0.3s linear;
+  transition: all 0.5s;
 }
 .service-card:hover {
   cursor: pointer;
-  border-top: 5px solid #037fff;
+  border: none;
+  border-color: transparent;
+  background-image: linear-gradient(180deg, #152d6a , #020231);
+  color: white;
+  border-radius: 8px;
 }
 .service-card-img {
-  width: 115px;
-  height: 115px;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background: white;
+  padding: 15px;
+  border-radius: 7px;
+  transform: translateY(-71px);
+}
+.service-card-wrapper {
+  margin: 90px 0 70px;
 }
