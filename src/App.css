@@ -3,6 +3,7 @@
   background-color: #10121b;
   width: 84%;
   margin-left: 16%;
+  z-index: 77;
 }
 .custom-blue-color {
   color: #4a5ed1;
@@ -19,7 +20,11 @@
 .object__fit {
   object-fit: cover;
 }
-
+.sidebar-container {
+  width: 16%;
+  height: 100vh;
+  background-color: #191d2b;
+}
 .custom-font-weight-600 {
   font-weight: 600;
 }
@@ -45,9 +50,20 @@
   border-color: #4a5ed1 !important;
   color: #fff !important;
 }
-#tsparticles{
+#tsparticles {
   height: 100vh;
 }
+
+.toggole__menu {
+  position: absolute;
+  right: 5%;
+  font-size: 30px;
+  color: #a3a3bc;
+  cursor: pointer;
+  top: 10%;
+  z-index: 3;
+  display: none;
+  }
 
 a:hover {
   text-decoration: none;

@@ -35,6 +35,10 @@ const socialIcons = [
   },
 ];
 
+const randomcolor = ["red", "green", "white", "blue"];
+const randomClassName = ["text-danger", "text-white", "text-primary"];
+
+console.log(Math.floor(Math.random() * randomcolor.length))
 const Home = () => {
   const handelDownload = () => {
     const a = document.createElement("a");
@@ -50,20 +54,25 @@ const Home = () => {
       <div className="home-content">
         <main className="min-height-100 d-flex align-items-center flex-column justify-content-center text-white text-center">
           <h1 className="name">
-            Hi, I am{" "}
-            <span className="custom-blue-color">
-              <Typed
-                strings={[
-                  "Web Developer",
-                  "Life time Learner",
-                  "Javascript Lover",
-                ]}
-                typeSpeed={150}
-                backSpeed={100}
-                loop
-              ></Typed>
-            </span>
+            Hi, I am <span className="custom-blue-color">Anamul Hoque</span>
           </h1>
+          <h5
+            className={`${
+              randomClassName[1]
+            }`}
+          >
+            <Typed
+              strings={[
+                "Web Designer",
+                "JavaScript Developer",
+                "Web Developer",                
+                "MERN Stack Developer",
+              ]}
+              typeSpeed={150}
+              backSpeed={100}
+              loop
+            ></Typed>
+          </h5>
           <p className="col-10 my-3">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
             suscipit sunt, deleniti ea assumenda culpa, iste dolorem maiores ab

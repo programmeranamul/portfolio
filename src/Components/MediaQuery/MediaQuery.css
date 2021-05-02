@@ -1,0 +1,29 @@
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 768px) {
+  .sidebar-container {
+    transform: translateX(-100%) !important;
+  }
+  .main-content {
+    width: 100%;
+    margin-left: 0;
+  }
+  .toggole__menu {
+    display: block;
+  }
+  .nav__toggle {
+    transform: translateX(-16%) !important;
+    z-index: 788;
+    width: 33%;
+    transition: all .5s ease;
+  }
+}
+@media only screen and (max-width: 425px) {
+    .nav__toggle {
+        transform: translateX(-16%) !important;
+        z-index: 788;
+        width: 50%;
+        transition: all .5s ease;
+      }
+}

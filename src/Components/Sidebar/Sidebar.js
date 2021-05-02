@@ -14,7 +14,7 @@ const menuItems = [
 
 const Sidebar = () => {
   return (
-    <aside className="side-menu d-flex flex-column justify-content-between position-fixed">
+    <aside className="side-menu d-flex flex-column justify-content-between">
       <div className="logo text-center pt-4 pb-3">
         <img src={logo} alt="Logo" className="w-75 rounded-circle" />
       </div>

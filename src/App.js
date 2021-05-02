@@ -1,20 +1,37 @@
-import './App.css';
-import Home from './Components/HomePage/Home';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Sidebar from './Components/Sidebar/Sidebar';
+import "./App.css";
+import Home from "./Components/HomePage/Home";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Sidebar from "./Components/Sidebar/Sidebar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import About from './Components/AboutPage/About';
-import Service from './Components/ServicesPage/Service';
-import ContactPage from './Components/ContactPage/ContactPage';
-import Portfolio from './Components/PortfolioPage/Portfolio';
-import PageNotFound from './Components/PageNotFound/PageNotFound';
+import About from "./Components/AboutPage/About";
+import Service from "./Components/ServicesPage/Service";
+import ContactPage from "./Components/ContactPage/ContactPage";
+import Portfolio from "./Components/PortfolioPage/Portfolio";
+import PageNotFound from "./Components/PageNotFound/PageNotFound";
+import "./Components/MediaQuery/MediaQuery.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 function App() {
+  const [iseToggoled, setIsToggoled] = useState(false);
+  const handelToggole = () => {
+    setIsToggoled(!iseToggoled);
+  };
+  console.log(iseToggoled);
   return (
     <Router>
       <div className="d-flex">
-        <Sidebar />
+        <div className={`sidebar-container position-fixed ${iseToggoled ? "nav__toggle" : ''}`}>
+          <Sidebar />
+        </div>
         <div className="main-content">
+          <FontAwesomeIcon
+            icon={faBars}
+            className="toggole__menu"
+            onClick={handelToggole}
+          />
+
           <Switch>
             <Route exact path="/">
               <Home />

@@ -1,7 +1,5 @@
 .side-menu {
-  width: 16%;
-  height: 100vh;
-  background-color: #191d2b;
+  width: 100%;
 }
 .side-menu .logo {
   border-bottom: 1px solid #2e344e;
