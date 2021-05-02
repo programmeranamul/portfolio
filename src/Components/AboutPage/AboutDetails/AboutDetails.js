@@ -11,6 +11,15 @@ const aboutDetails = [
 ];
 
 const AboutDetails = () => {
+  const handelDownload = () => {
+    const a = document.createElement("a");
+    a.href =
+      "https://drive.google.com/uc?export=download&id=1PhF-IyNOHMdZKFx94dttD1zhIMNLnhNd";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+
   return (
     <section className="d-md-flex mt-4">
       <div className="w-100">
@@ -43,7 +52,12 @@ const AboutDetails = () => {
             ))}
           </tbody>
         </Table>
-        <button className="btn btn-primary">Download CV</button>
+        <button
+          onClick={handelDownload}
+          className="btn button-background-color"
+        >
+          Download CV
+        </button>
       </div>
     </section>
   );

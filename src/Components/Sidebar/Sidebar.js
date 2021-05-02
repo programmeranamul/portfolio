@@ -29,12 +29,15 @@ const Sidebar = () => {
           </NavLink>
         ))}
       </nav>
-      <div className="d-flex justify-content-center mb-3">
-        <button className="btn btn-primary">Download CV</button>
-      </div>
-      {/* <footer className="py-2">
-                <p className="text-center text-white m-0">© 2020 anamul.com</p>
-            </footer> */}
+
+      <footer className="d-flex justify-content-center mb-3">
+        <a
+          href="https://drive.google.com/uc?export=download&id=1PhF-IyNOHMdZKFx94dttD1zhIMNLnhNd"
+          className="btn button-background-color"
+        >
+          Download CV
+        </a>
+      </footer>
     </aside>
   );
 };
