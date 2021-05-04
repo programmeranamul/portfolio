@@ -2,7 +2,7 @@ import React from 'react';
 import {
     faFacebookF,
     faLinkedinIn,
-    faTwitter,
+    faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Map.css'
@@ -10,8 +10,8 @@ import './Map.css'
 
 const socialIcons = [
     { icon: faFacebookF, link: "https://web.facebook.com/profile.php?id=100044216173061", className: 'facebook' },
-    { icon: faLinkedinIn, link: "facebook.com", className: 'facebook' },
-    { icon: faTwitter, link: "facebook.com", className: 'facebook' }
+    { icon: faLinkedinIn, link: "https://www.linkedin.com/in/anamul-hoque-b90327204/", className: 'facebook' },
+    { icon: faGithub, link: "https://github.com/programmeranamul", className: 'facebook' }
 ]
 
 const Map = () => {
@@ -24,7 +24,7 @@ const Map = () => {
             ></iframe>
             <div className="social-icon-group">
                 {
-                    socialIcons.map(socialIcon => <a href={socialIcon.link} target="_blanck"><FontAwesomeIcon icon={socialIcon.icon} className="facebook" /></a>)
+                    socialIcons.map(socialIcon => <a href={socialIcon.link} target="_blank"><FontAwesomeIcon icon={socialIcon.icon} className="facebook" /></a>)
                 }
             </div>
         </div>

@@ -12,17 +12,22 @@ import "./Components/MediaQuery/MediaQuery.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import MouseParticles from "react-mouse-particles";
 
 function App() {
   const [iseToggoled, setIsToggoled] = useState(false);
   const handelToggole = () => {
     setIsToggoled(!iseToggoled);
   };
-  console.log(iseToggoled);
+
   return (
     <Router>
       <div className="d-flex">
-        <div className={`sidebar-container position-fixed ${iseToggoled ? "nav__toggle" : ''}`}>
+        <div
+          className={`sidebar-container position-fixed ${
+            iseToggoled ? "nav__toggle" : ""
+          }`}
+        >
           <Sidebar />
         </div>
         <div className="main-content">
@@ -56,6 +61,13 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <MouseParticles
+          g={1}
+          num={6}
+          color="random"
+          cull="col,image-wrapper"
+          level={6}
+        />
       </div>
     </Router>
   );

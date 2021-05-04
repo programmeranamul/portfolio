@@ -60,13 +60,14 @@ const Portfolio = () => {
             <img
               src={portfolio.Image}
               alt={portfolio.name}
-              className="img-fluid height-100 rounded"
+              className="img-fluid height-100 rounded i"
             />
             <div
               className={`${
                 portfolio.serverCode ? "link-area-code" : "link-area"
               }`}
             >
+              <h4 className="text-center text-white">{portfolio.name}</h4>
               <div className="d-flex">
                 <a href={portfolio.liveLink} target="_blanck">
                   Live Link

@@ -1,5 +1,6 @@
 .side-menu {
   width: 100%;
+  min-height: 100vh;
 }
 .side-menu .logo {
   border-bottom: 1px solid #2e344e;

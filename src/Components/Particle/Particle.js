@@ -2,20 +2,18 @@ import React from "react";
 import Particles from "react-particles-js";
 import Config from "./Config";
 import react from "../../image/logo512.png";
-import javascript from "../../image/js.png";
 import nodejs from "../../image/node-js.png";
 import mongodb from "../../image/mongo.png";
 import css from "../../image/css.png"
 import html from '../../image/html.png'
 
 const Particle = () => {
-  //   return <Particles params={Config}></Particles>;
   return (
     <Particles
       params={{
         particles: {
           number: {
-            value: 6,
+            value: 10,
             density: {
               enable: true,
               value_area: 800,

@@ -22,8 +22,8 @@
 }
 .sidebar-container {
   width: 16%;
-  height: 100vh;
-  background-color: #191d2b;
+  min-height: 100vh;
+  background-color: #191d2b;  
 }
 .custom-font-weight-600 {
   font-weight: 600;

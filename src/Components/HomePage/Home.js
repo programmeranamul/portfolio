@@ -38,7 +38,7 @@ const socialIcons = [
 const randomcolor = ["red", "green", "white", "blue"];
 const randomClassName = ["text-danger", "text-white", "text-primary"];
 
-console.log(Math.floor(Math.random() * randomcolor.length))
+console.log(Math.floor(Math.random() * randomcolor.length));
 const Home = () => {
   const handelDownload = () => {
     const a = document.createElement("a");
@@ -56,16 +56,12 @@ const Home = () => {
           <h1 className="name">
             Hi, I am <span className="custom-blue-color">Anamul Hoque</span>
           </h1>
-          <h5
-            className={`${
-              randomClassName[1]
-            }`}
-          >
+          <h5 className={`${randomClassName[1]}`}>
             <Typed
               strings={[
                 "Web Designer",
                 "JavaScript Developer",
-                "Web Developer",                
+                "Web Developer",
                 "MERN Stack Developer",
               ]}
               typeSpeed={150}
