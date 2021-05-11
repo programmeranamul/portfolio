@@ -1,6 +1,5 @@
 import React from "react";
 import Particles from "react-particles-js";
-import Config from "./Config";
 import react from "../../image/logo512.png";
 import nodejs from "../../image/node-js.png";
 import mongodb from "../../image/mongo.png";

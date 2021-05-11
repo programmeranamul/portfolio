@@ -7,8 +7,7 @@
 }
 .service-card:hover {
   cursor: pointer;
-  border: none;
-  border-color: transparent;
+  border-color: #152d6a;
   background-image: linear-gradient(180deg, #152d6a , #020231);
   color: white;
   border-radius: 8px;
